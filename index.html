@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Alex Kelly Sewing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+  <nav class="topnav" id="myTopnav">
+          <a href="index.html" class="active">Home</a>
+          <a href="sewing_projects.html">Example Sewing Projects</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </nav>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/91888365_220509205674849_4462677483916886016_n.jpg" alt="Sewing Machine with Yellow Fabric" style="width:100%">
+  <div class="centered">How to Thread a Sewing Machine</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/92235735_212230713389707_5763752455175143424_n.jpg" alt="Top of Sewing Machine with Green Thread" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/91796229_2521283208201476_3365929190854492160_n.jpg" alt="Thread Going Through Needle" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="container">
+  <header id="ducky">
+    <div style="text-align:center">
+      <h1>7 Easy Steps to Thread a Sewing Machine</h1>
+      <h2> By: Alex Kelly</h2>
+      <p class="intro">
+        To start any sewing project, you first need to thread your machine.
+        <br>Knowing the different parts of your machine and following these simple steps will help you get started!
+      </p>
+    </div>
+      <div style="text-align:center">
+        <button id="hide">Hide</button>
+    </div>
+</header>
+
+<hr>
+
+<article class="main">
+  <div class="p1">
+  <div style="text-align:center">
+  <h3>Step 1</h3>
+  </div>
+  <p>
+    <img src="img/92052389_213354703097913_2438225244285042688_n.jpg" alt="Green Thread Placed onto Spool Pin" style="width:500px;">
+    Place the thread spool on the spool pin
+  </p>
+  </div>
+
+  <div class="p2">
+  <div style="text-align:center">
+  <h3>Step 2</h3>
+  </div>
+  <p>
+    <img src="img/92235735_212230713389707_5763752455175143424_n.jpg" alt="Thread Wrapped Around the Thread Guide" style="width:500px;">
+    Wrap the thread around the rectangular guide
+  </p>
+  </div>
+
+  <div class="p1">
+  <div style="text-align:center">
+  <h3>Step 3</h3>
+  </div>
+  <p>
+    <img src="img/92053467_1353526614835989_7825685031858208768_n.jpg" alt="Pulling the Thread Down" style="width:500px;">
+    Pull the thread down
+  </p>
+  </div>
+
+  <div class="p2">
+  <div style="text-align:center">
+  <h3>Step 4</h3>
+  </div>
+  <p>
+    <img src="img/92309760_498378707507964_1988810182943047680_n.jpg" alt="Pulling the Thread Up" style="width:500px;">
+    Pull the thread around the end of the plastic and up
+  </p>
+  </div>
+
+  <div class="p1">
+  <div style="text-align:center">
+  <h3>Step 5</h3>
+  </div>
+  <p>
+    <img src="img/92400863_213182639942527_3128125471674335232_n.jpg" alt="Wrapping the Thread Around the Takeup Lever" style="width:500px;">
+    Wrap the thread around the takeup lever
+  </p>
+  </div>
+
+  <div class="p2">
+  <div style="text-align:center">
+  <h3>Step 6</h3>
+  </div>
+  <p>
+    <img src="img/91796229_2521283208201476_3365929190854492160_n.jpg" alt="Placing the Thread Through the Needle" style="width:500px;">
+    Put the thread through the front hole of the needle
+  </p>
+  </div>
+
+  <div class="p1">
+  <div style="text-align:center">
+  <h3>Step 7</h3>
+  </div>
+  <p>
+    <img src="img/91888365_220509205674849_4462677483916886016_n.jpg" alt="Sewing on Yellow Fabric" style="width:500px;">
+    The top thread is set and you're ready to sew
+  </p>
+  </div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+          //all js goes in here
+          //the code below adds the class chubbySquare to the demo box
+          $( "#hide" ).click(function() {
+                $("#ducky").hide();
+            });
+
+        });
+</script>
+
+</body>
+</html>

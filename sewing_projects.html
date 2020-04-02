@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Alex Kelly Sewing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+  <nav class="topnav" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="sewing_projects.html" class="active" >Example Sewing Projects</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </nav>
+      <main class="gallery">
+        <div id="photo"><img src="img/91737493_2753241514789794_3886861698262368256_n.jpg" alt="Orange Art Piece Pillow with Label" id="slide"></div>
+        <div id="thumb_1" class="thumbnail"><img src="img/91540826_257360388758907_9008973071939272704_n.jpg" alt="White Fluffly Pillow"></div>
+        <div id="thumb_2" class="thumbnail"><img src="img/91982016_217001259397050_6993456760874860544_n.jpg" alt="Purple Fluffy Pillow"></div>
+        <div id="thumb_3" class="thumbnail"><img src="img/92019084_709621623140525_6700100817996742656_n.jpg" alt="Two Red Pillows"></div>
+      </main>
+
+
+
+      <script type="text/javascript">
+          $(document).ready(function(){
+            $("#thumb_1").click(function(){
+                $("#slide").attr('src','img/91540826_257360388758907_9008973071939272704_n.jpg');
+            });
+            $("#thumb_2").click(function(){
+                $("#slide").attr('src','img/91982016_217001259397050_6993456760874860544_n.jpg');
+            });
+            $("#thumb_3").click(function(){
+                $("#slide").attr('src','img/92019084_709621623140525_6700100817996742656_n.jpg');
+            });
+
+
+              });
+
+          </script>
+    </body>
+    </html>
